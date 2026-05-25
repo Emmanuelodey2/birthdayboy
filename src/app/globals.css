@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Italianno';
+    src: url('/public/fonts/Italianno-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .italianno {
+    font-family: 'Italianno', cursive;
+  }
+  @keyframes float {
+    0% { transform: translateY(0px) rotate(var(--rotate)); }
+    50% { transform: translateY(-10px) rotate(var(--rotate)); }
+    100% { transform: translateY(0px) rotate(var(--rotate)); }
+  }
