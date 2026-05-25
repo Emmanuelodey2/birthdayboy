@@ -1,5 +1,9 @@
-const PolaroidVideo = ({ src, caption = "Memory 🎥" }) => {
-    return (
+type PolaroidVideoProps = {
+  src: string;
+  caption?: string;
+};
+
+const PolaroidVideo = ({ src, caption = "Memory 🎥" }: PolaroidVideoProps) => {
       <div className="bg-white p-3 pb-6 shadow-xl rotate-[-4deg] rounded-sm">
         
         {/* VIDEO CONTAINER */}
