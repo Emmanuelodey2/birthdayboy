@@ -411,8 +411,7 @@ Hope you had a great day`,
         {
           image: "/assets/coach.png",
           text: `
-      I think is your full name. you’re one of the few guys i can and readily point to in my life as a friend. we met in secondary school ofc (hell) and we’ve been a mixture of close and distant since then with one connection or the other from same class, to basketball, to pau now and everything inbetween. i’m glad we are friends, i’m glad you’re still in my life, and i hope we stay this way as long as possible. happy birthday you beautiful black boy. 
-`,
+Amongst the young men that stress my life, alot, you are one i can say makes it worth it. You are not just a good basketball player but a perfect gentleman. Every lady on the female team loves you for it, i can tell you that much. I see how you try to fix up and do better as a player and as one of the leaders in the team and i respect it. Keep growing in age and mind and HEIGHT 😂. I wish you a great year, more life and prosperity. God bless you and keep you. Once again, happy birthday!!!`,
         },
 
       ]
