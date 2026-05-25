@@ -35,130 +35,130 @@ export default function Home() {
     setEnteredPin((prev) => prev.slice(0, -1));
   };
 
-  // // LOCK SCREEN
-  // if (!isUnlocked) {
-  //   return (
-  //     <div className="w-screen h-screen overflow-hidden bg-[#0f172a] relative flex items-center justify-center">
+  // LOCK SCREEN
+  if (!isUnlocked) {
+    return (
+      <div className="w-screen h-screen overflow-hidden bg-[#0f172a] relative flex items-center justify-center">
 
-  //       {/* BACKGROUND GLOW */}
-  //       <div className="absolute inset-0">
-  //         <div className="absolute w-[500px] h-[500px] bg-pink-500/20 blur-3xl rounded-full top-[-100px] left-[-100px]" />
-  //         <div className="absolute w-[400px] h-[400px] bg-blue-500/20 blur-3xl rounded-full bottom-[-100px] right-[-100px]" />
-  //       </div>
+        {/* BACKGROUND GLOW */}
+        <div className="absolute inset-0">
+          <div className="absolute w-[500px] h-[500px] bg-pink-500/20 blur-3xl rounded-full top-[-100px] left-[-100px]" />
+          <div className="absolute w-[400px] h-[400px] bg-blue-500/20 blur-3xl rounded-full bottom-[-100px] right-[-100px]" />
+        </div>
 
-  //       {/* CARD */}
-  //       <div
-  //         className="
-  //           relative z-10
-  //           w-[92%]
-  //           max-w-[400px]
-  //           rounded-[32px]
-  //           bg-white/10
-  //           backdrop-blur-xl
-  //           border border-white/20
-  //           shadow-2xl
-  //           p-6 sm:p-8
-  //         "
-  //       >
+        {/* CARD */}
+        <div
+          className="
+            relative z-10
+            w-[92%]
+            max-w-[400px]
+            rounded-[32px]
+            bg-white/10
+            backdrop-blur-xl
+            border border-white/20
+            shadow-2xl
+            p-6 sm:p-8
+          "
+        >
 
-  //         {/* TITLE */}
-  //         <div className="text-center">
-  //           <p className="text-white/60 tracking-[0.4em] uppercase text-[10px] sm:text-xs">
-  //             Private Access
-  //           </p>
+          {/* TITLE */}
+          <div className="text-center">
+            <p className="text-white/60 tracking-[0.4em] uppercase text-[10px] sm:text-xs">
+              Private Access
+            </p>
 
-  //           <h1 className="text-white font-bold text-3xl sm:text-4xl mt-3">
-  //             20 Letters 💌
-  //           </h1>
+            <h1 className="text-white font-bold text-3xl sm:text-4xl mt-3">
+              20 Letters 💌
+            </h1>
 
-  //           <p className="text-white/70 text-sm sm:text-base mt-3 leading-relaxed">
-  //             Enter the secret pin to unlock Etoms's birthday letters.
-  //           </p>
-  //         </div>
+            <p className="text-white/70 text-sm sm:text-base mt-3 leading-relaxed">
+              Enter the secret pin to unlock Etoms's birthday letters.
+            </p>
+          </div>
 
-  //         {/* PIN DOTS */}
-  //         <div className="flex justify-center gap-4 mt-8 mb-8">
-  //           {[0, 1, 2, 3].map((i) => (
-  //             <div
-  //               key={i}
-  //               className={`
-  //                 w-4 h-4 rounded-full transition-all duration-300
-  //                 ${
-  //                   enteredPin[i]
-  //                     ? "bg-white scale-110"
-  //                     : "bg-white/20"
-  //                 }
-  //               `}
-  //             />
-  //           ))}
-  //         </div>
+          {/* PIN DOTS */}
+          <div className="flex justify-center gap-4 mt-8 mb-8">
+            {[0, 1, 2, 3].map((i) => (
+              <div
+                key={i}
+                className={`
+                  w-4 h-4 rounded-full transition-all duration-300
+                  ${
+                    enteredPin[i]
+                      ? "bg-white scale-110"
+                      : "bg-white/20"
+                  }
+                `}
+              />
+            ))}
+          </div>
 
-  //         {/* DIAL PAD */}
-  //         <div className="grid grid-cols-3 gap-4">
+          {/* DIAL PAD */}
+          <div className="grid grid-cols-3 gap-4">
 
-  //           {[1,2,3,4,5,6,7,8,9].map((num) => (
-  //             <button
-  //               key={num}
-  //               onClick={() => handleNumberClick(num.toString())}
-  //               className="
-  //                 h-16 rounded-2xl
-  //                 bg-white/10
-  //                 border border-white/10
-  //                 text-white text-xl font-semibold
-  //                 active:scale-95
-  //                 transition-all duration-200
-  //                 hover:bg-white/20
-  //               "
-  //             >
-  //               {num}
-  //             </button>
-  //           ))}
+            {[1,2,3,4,5,6,7,8,9].map((num) => (
+              <button
+                key={num}
+                onClick={() => handleNumberClick(num.toString())}
+                className="
+                  h-16 rounded-2xl
+                  bg-white/10
+                  border border-white/10
+                  text-white text-xl font-semibold
+                  active:scale-95
+                  transition-all duration-200
+                  hover:bg-white/20
+                "
+              >
+                {num}
+              </button>
+            ))}
 
-  //           {/* EMPTY */}
-  //           <div />
+            {/* EMPTY */}
+            <div />
 
-  //           {/* 0 */}
-  //           <button
-  //             onClick={() => handleNumberClick("0")}
-  //             className="
-  //               h-16 rounded-2xl
-  //               bg-white/10
-  //               border border-white/10
-  //               text-white text-xl font-semibold
-  //               active:scale-95
-  //               transition-all duration-200
-  //               hover:bg-white/20
-  //             "
-  //           >
-  //             0
-  //           </button>
+            {/* 0 */}
+            <button
+              onClick={() => handleNumberClick("0")}
+              className="
+                h-16 rounded-2xl
+                bg-white/10
+                border border-white/10
+                text-white text-xl font-semibold
+                active:scale-95
+                transition-all duration-200
+                hover:bg-white/20
+              "
+            >
+              0
+            </button>
 
-  //           {/* DELETE */}
-  //           <button
-  //             onClick={handleDelete}
-  //             className="
-  //               h-16 rounded-2xl
-  //               bg-red-500/20
-  //               border border-red-300/20
-  //               text-white text-sm font-medium
-  //               active:scale-95
-  //               transition-all duration-200
-  //             "
-  //           >
-  //             Delete
-  //           </button>
+            {/* DELETE */}
+            <button
+              onClick={handleDelete}
+              className="
+                h-16 rounded-2xl
+                bg-red-500/20
+                border border-red-300/20
+                text-white text-sm font-medium
+                active:scale-95
+                transition-all duration-200
+              "
+            >
+              Delete
+            </button>
 
-  //         </div>
+          </div>
 
-  //         {/* HINT */}
-  //         <p className="text-center text-white/40 text-xs mt-6">
-  //           Only the right person gets in ✨
-  //         </p>
+          {/* HINT */}
+          <p className="text-center text-white/40 text-xs mt-6">
+            Only the right person gets in ✨
+          </p>
 
-  //       </div>
-  //     </div>
-  //   );
-  // }
+        </div>
+      </div>
+    );
+  }
 
   // MAIN WEBSITE
   return (
